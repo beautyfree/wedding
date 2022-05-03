@@ -11,6 +11,8 @@ export const global = css`
       line-height: 1em;
       -webkit-font-smoothing: antialiased;
 
+      background: #fff;
+
       ${up.tablet} {
         font-size: 150%;
       }
