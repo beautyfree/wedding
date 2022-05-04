@@ -28,7 +28,7 @@ const ButtonsWrapper = styled.div`
   margin: ${em("15px")} 0 ${em("25px")};
 `;
 
-const Button = styled.button`
+const ButtonA = styled.a`
   position: relative;
   z-index: 1;
 
@@ -112,8 +112,21 @@ export const Decision: FC<Props> = (props) => {
         июня 2022 года.
       </HintText>
       <ButtonsWrapper>
-        <Button>Я пойду</Button>
-        <Button className="negative">Не пойду</Button>
+        <ButtonA
+          href="https://docs.google.com/forms/d/1Y3vOn5dPfbWnEuoevGkDOr7_rZme0IAl8zy8bn_-skc"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Я пойду
+        </ButtonA>
+        <ButtonA
+          href="https://docs.google.com/forms/d/1SvpQtxr1sDtp6QpxqR0EQs7Iqfvp_-Y_kDDgDvJ-sOk"
+          target="_blank"
+          rel="noreferrer"
+          className="negative"
+        >
+          Не пойду
+        </ButtonA>
       </ButtonsWrapper>
       <TelegramText>
         Мы будем публиковать актуальную информацию в специальном telegram
