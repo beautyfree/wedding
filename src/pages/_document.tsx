@@ -12,6 +12,8 @@ export default function Document() {
         />
         <meta property="og:image" content="/og-image.png" />
 
+        <meta name="yandex-verification" content="07ac502a7dd01e95" />
+
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
