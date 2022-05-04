@@ -3,16 +3,6 @@ const withPlugins = require("next-compose-plugins");
 const withLinaria = require("next-linaria");
 const optimizedImages = require("next-optimized-images");
 
-// const nextConfig = {
-//   reactStrictMode: true,
-//   linaria: {
-//     cacheDirectory: "./.next/cache/linaria",
-//     sourceMap: process.env.NODE_ENV === "production",
-//   },
-// };
-//
-// module.exports = withLinaria(nextConfig);
-
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = withPlugins([
@@ -21,7 +11,7 @@ module.exports = withPlugins([
     {
       linaria: {
         cacheDirectory: "./.next/cache/linaria",
-        sourceMap: process.env.NODE_ENV === "production",
+        sourceMap: isProd,
       },
     },
   ],
