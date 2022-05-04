@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require("next-compose-plugins");
 const withLinaria = require("next-linaria");
-// const optimizedImages = require("next-optimized-images");
+const optimizedImages = require("next-optimized-images");
 
 // const nextConfig = {
 //   reactStrictMode: true,
@@ -25,20 +25,20 @@ module.exports = withPlugins([
       },
     },
   ],
-  // [
-  //   optimizedImages,
-  //   {
-  //     mozjpeg: {
-  //       quality: 80,
-  //     },
-  //     pngquant: {
-  //       speed: 3,
-  //       strip: true,
-  //       verbose: true,
-  //     },
-  //     imagesPublicPath: "/wedding/_next/static/images/",
-  //   },
-  // ],
+  [
+    optimizedImages,
+    {
+      mozjpeg: {
+        quality: 80,
+      },
+      pngquant: {
+        speed: 3,
+        strip: true,
+        verbose: true,
+      },
+      // imagesPublicPath: "/wedding/_next/static/images/",
+    },
+  ],
   {
     reactStrictMode: true,
     // basePath: isProd ? "/wedding" : "",
