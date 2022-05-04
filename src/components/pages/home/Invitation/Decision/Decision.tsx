@@ -113,14 +113,14 @@ export const Decision: FC<Props> = (props) => {
       </HintText>
       <ButtonsWrapper>
         <ButtonA
-          href="https://docs.google.com/forms/d/1Y3vOn5dPfbWnEuoevGkDOr7_rZme0IAl8zy8bn_-skc"
+          href="https://forms.gle/KfCYCpvZJ1xSCfMd7"
           target="_blank"
           rel="noreferrer"
         >
           Я пойду
         </ButtonA>
         <ButtonA
-          href="https://docs.google.com/forms/d/1SvpQtxr1sDtp6QpxqR0EQs7Iqfvp_-Y_kDDgDvJ-sOk"
+          href="https://forms.gle/ntJspVkGKJhe4JEh9"
           target="_blank"
           rel="noreferrer"
           className="negative"
