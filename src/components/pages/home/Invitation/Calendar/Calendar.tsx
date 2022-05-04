@@ -122,13 +122,13 @@ export const Calendar: FC<Props> = (props) => {
       <TitleText>Июнь 2022</TitleText>
       <CalendarContent>
         <Top>
-          {["П", "В", "С", "Ч", "П", "С", "В"].map((day) => (
-            <DayNameText key={day}>{day}</DayNameText>
+          {["П", "В", "С", "Ч", "П", "С", "В"].map((day, i) => (
+            <DayNameText key={`${day}${i}`}>{day}</DayNameText>
           ))}
         </Top>
         <Row>
-          {["", "", ...range(1, 6)].map((day) => (
-            <DayNumberText key={day}>{day}</DayNumberText>
+          {["", "", ...range(1, 6)].map((day, i) => (
+            <DayNumberText key={`${day}${i}`}>{day}</DayNumberText>
           ))}
         </Row>
         <Row>
@@ -152,8 +152,8 @@ export const Calendar: FC<Props> = (props) => {
           ))}
         </Row>
         <Row>
-          {[...range(27, 31), "", "", ""].map((day) => (
-            <DayNumberText key={day}>{day}</DayNumberText>
+          {[...range(27, 31), "", "", ""].map((day, i) => (
+            <DayNumberText key={`${day}${i}`}>{day}</DayNumberText>
           ))}
         </Row>
       </CalendarContent>

@@ -66,7 +66,7 @@ export const DearText: FC<Props> = ({ text }) => {
       {words.map((word, i) => {
         if (i === 0) {
           return (
-            <span key={word} style={{ position: "relative" }}>
+            <span key={`${word}${i}`} style={{ position: "relative" }}>
               <AngelBoy />
               <span dangerouslySetInnerHTML={{ __html: word }} />{" "}
             </span>
@@ -75,7 +75,7 @@ export const DearText: FC<Props> = ({ text }) => {
 
         if (i === words.length - 1) {
           return (
-            <span key={word} style={{ position: "relative" }}>
+            <span key={`${word}${i}`} style={{ position: "relative" }}>
               <span dangerouslySetInnerHTML={{ __html: word }} />
               <AngelGirl />
             </span>
@@ -83,9 +83,9 @@ export const DearText: FC<Props> = ({ text }) => {
         }
 
         return (
-          <>
-            <span key={word} dangerouslySetInnerHTML={{ __html: word }} />{" "}
-          </>
+          <React.Fragment key={`${word}${i}`}>
+            <span dangerouslySetInnerHTML={{ __html: word }} />{" "}
+          </React.Fragment>
         );
       })}
     </Wrapper>

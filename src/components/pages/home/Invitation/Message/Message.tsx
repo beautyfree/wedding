@@ -5,6 +5,8 @@ import { styled } from "@linaria/react";
 import { em } from "polished";
 import { families, up } from "styles";
 import { DearText } from "./DearText";
+import { useRouter } from "next/router";
+import { invites } from "data/invites";
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,12 +40,15 @@ const Delimiter = styled.div`
   background-size: ${em("42px")} auto;
 `;
 
-interface Props {}
+export const Message: FC = () => {
+  const router = useRouter();
+  const { slug } = router.query;
 
-export const Message: FC<Props> = (props) => {
+  const invite = slug ? invites[slug as string] : null;
+
   return (
     <Wrapper>
-      <DearText text="Дорогие гости" />
+      <DearText text={`Дорогие ${invite?.message ?? "гости"}`} />
       <HappyText>
         Мы будем рады разделить с вами радость неповторимого для нас дня — дня
         нашей свадьбы! Приглашаем присоединиться
