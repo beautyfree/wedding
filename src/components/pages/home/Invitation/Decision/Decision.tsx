@@ -4,6 +4,7 @@ import React from "react";
 import { styled } from "@linaria/react";
 import { em } from "polished";
 import { down, families, up } from "styles";
+import { useInvite } from "hooks/useInvite";
 
 const Wrapper = styled.div`
   display: flex;
@@ -105,10 +106,13 @@ const TelegramText = styled.span`
 interface Props {}
 
 export const Decision: FC<Props> = (props) => {
+  const invite = useInvite();
+
   return (
     <Wrapper>
       <HintText>
-        Будем очень признательны, если вы ответите на приглашение <br /> до 1
+        Будем очень признательны, если {invite?.single ? "ты" : "вы"}{" "}
+        {invite?.single ? "ответишь" : "ответите"} на приглашение <br /> до 1
         июня 2022 года.
       </HintText>
       <ButtonsWrapper>

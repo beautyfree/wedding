@@ -7,6 +7,7 @@ import { families, up } from "styles";
 import { DearText } from "./DearText";
 import { useRouter } from "next/router";
 import { invites } from "data/invites";
+import { useInvite } from "hooks/useInvite";
 
 const Wrapper = styled.div`
   display: flex;
@@ -41,17 +42,14 @@ const Delimiter = styled.div`
 `;
 
 export const Message: FC = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-
-  const invite = slug ? invites[slug as string] : null;
+  const invite = useInvite();
 
   return (
     <Wrapper>
-      <DearText text={`Дорогие ${invite?.message ?? "гости"}`} />
+      <DearText text={invite?.message ?? "Дорогие гости"} />
       <HappyText>
-        Мы будем рады разделить с вами радость неповторимого для нас дня — дня
-        нашей свадьбы! Приглашаем присоединиться
+        Мы будем рады разделить с {invite?.single ? "тобой" : "вами"} радость
+        неповторимого для нас дня — дня нашей свадьбы! Приглашаем присоединиться
         <br /> к нашему празднику :)
       </HappyText>
       <Delimiter />
