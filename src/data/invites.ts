@@ -39,7 +39,7 @@ export const invites: Invites = {
   sashavasya: {
     message: `Дорогие Александра<br/> и Василий`,
   },
-  oksakova: {
+  aksakova: {
     message: `Дорогая <br/> Екатерина`,
     single: true,
   },
