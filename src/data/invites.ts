@@ -50,6 +50,10 @@ export const invites: Invites = {
     message: `Дорогой <br/> Станислав`,
     single: true,
   },
+  kazimir: {
+    message: `Дорогой <br/> Казимир`,
+    single: true,
+  },
 
   //
   "elizarovy-senior": {
@@ -89,6 +93,9 @@ export const invites: Invites = {
   lebedev: {
     message: `Дорогой <br/> Илья`,
     single: true,
+  },
+  nastyakolya: {
+    message: `Дорогие Анастасия <br/> и Николай`,
   },
 
   //
