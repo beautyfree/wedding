@@ -97,6 +97,15 @@ export const invites: Invites = {
   nastyakolya: {
     message: `Дорогие Анастасия <br/> и Николай`,
   },
+  gynzery: {
+    message: `Дорогие Наталья <br/> и Геннадий`,
+  },
+  cecegovy: {
+    message: `Дорогие Марина,<br/> Сергей и Алексей`,
+  },
+  olgadima: {
+    message: `Дорогие Ольга <br/> и Дмитрий`,
+  },
 
   //
   milovanov: {
