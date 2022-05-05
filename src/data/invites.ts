@@ -48,6 +48,7 @@ export const invites: Invites = {
   },
   stas: {
     message: `Дорогой <br/> Станислав`,
+    single: true,
   },
 
   //
@@ -87,6 +88,12 @@ export const invites: Invites = {
   },
   lebedev: {
     message: `Дорогой <br/> Илья`,
+    single: true,
+  },
+
+  //
+  milovanov: {
+    message: `Дорогой <br/> Дима`,
     single: true,
   },
 };
