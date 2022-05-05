@@ -28,16 +28,16 @@ export const invites: Invites = {
     message: `Дорогие <br/> Ольга и Андрей`,
   },
   "minkevichy-senior": {
-    message: `Дорогие <br/> Екатерина и Владимир`,
+    message: `Дорогие Екатерина<br/> и Владимир`,
   },
   "minkevichy-junior": {
     message: `Дорогие <br/> Ирина и Иван`,
   },
   melnikovy: {
-    message: `Дорогие <br/> Ольга и Константин`,
+    message: `Дорогие Ольга<br/> и Константин`,
   },
   sashavasya: {
-    message: `Дорогие <br/> Александра и Василий`,
+    message: `Дорогие Александра<br/> и Василий`,
   },
   oksakova: {
     message: `Дорогая <br/> Екатерина`,
@@ -55,16 +55,16 @@ export const invites: Invites = {
     message: `Дорогие <br/> Алина и Василий`,
   },
   sashadanya: {
-    message: `Дорогие <br/> Александр и Даниил`,
+    message: `Дорогие Александр<br/> и Даниил`,
   },
   poniny: {
     message: `Дорогие <br/> Ольга и Иван`,
   },
   sherbakovy: {
-    message: `Дорогие <br/> Елена и Александр`,
+    message: `Дорогие Елена<br/> и Александр`,
   },
   orekhovy: {
-    message: `Дорогие <br/> Елизавета и Андрей`,
+    message: `Дорогие Елизавета<br/> и Андрей`,
   },
   mikhail: {
     message: `Дорогой <br/> Михаил`,
@@ -80,7 +80,7 @@ export const invites: Invites = {
     message: `Дорогие <br/> Ольга и Илья`,
   },
   andronovy: {
-    message: `Дорогие <br/> Екатерина и Денис`,
+    message: `Дорогие Екатерина<br/> и Денис`,
   },
   lebedev: {
     message: `Дорогой <br/> Илья`,
