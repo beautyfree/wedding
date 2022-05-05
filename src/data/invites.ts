@@ -46,6 +46,9 @@ export const invites: Invites = {
   lizaoleg: {
     message: `Дорогие <br/> Елизавета и Олег`,
   },
+  stas: {
+    message: `Дорогой <br/> Станислав`,
+  },
 
   //
   "elizarovy-senior": {
